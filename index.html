@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Serenata de Sabores - Exquisito viaje culinario por América.</title>
+    <meta name="title" content="Serenata de Sabores - Exquisito viaje culinario por América." />
+    <meta name="description" content="Saborea lo mejor de América con Serenata de Sabores. Acompáñanos en una aventura culinaria que deleitará tu paladar y tus sentidos." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bivi15.github.io/serenatadesabores/index.html" />
+    <meta property="og:title" content="Serenata de Sabores - Exquisito viaje culinario por América." />
+    <meta property="og:description" content="Saborea lo mejor de América con Serenata de Sabores. Acompáñanos en una aventura culinaria que deleitará tu paladar y tus sentidos." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bivi15.github.io/serenatadesabores/index.html" />
+    <meta property="twitter:title" content="Serenata de Sabores - Exquisito viaje culinario por América." />
+    <meta property="twitter:description" content="Saborea lo mejor de América con Serenata de Sabores. Acompáñanos en una aventura culinaria que deleitará tu paladar y tus sentidos." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--El header tiene la misma distribución del Homepage-->
+    <header class="header">
+        <p class="header__p"><a href="platos.html" title="Menú">Sumérgete en nuestro delicioso menú!</a></p>
+        <!--El nombre del restaurante va a redirigir siempre al Homepage-->
+        <h1 class="header__title"><a href="index.html" title="Homepage">Serenata de Sabores</a></h1>
+        <div class="header__wrapper">
+            <picture class="header__picture">
+                <img src="assets/logo/logo.webp" alt="Logo" class="header__logo" title="Logo">
+            </picture>
+            <!--El menú tipo hamburguesa se va a desplegar cubriendo toda la página y va a contar con 5 links-->
+            <nav class="header__nav">
+                <div class="header__menu">
+                    <div class="header__line linea"></div>
+                    <div class="header__line lineb"></div>
+                    <div class="header__line linec"></div>
+                </div>
+                <div class="header__bgcover"></div>
+                <ul class="header__navlist">
+                    <li class="header__navitem">
+                        <a href="ubicaciones.html" class="header__navlink" title="Ubicación">Ubicación</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="somos.html" class="header__navlink" title="Somos">Quiénes somos</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="ayudante.html" class="header__navlink" title="Ayudante">Ayudante de cocina</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="platos.html" class="header__navlink" title="Menú">Menú</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="contacto.html" class="header__navlink" title="Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--El main se va a dividir en cuatro secciones.-->
+    <main class="main">
+        <!--En la primera sección se va a mostrar un slider de 5 fotos de los platos de temporada del restaurante.-->
+        <section class="partes temporada">
+            <h2 class="partes__titulo">Degusta la temporada: Creaciones frescas y sabrosas.</h2>
+            <div class="temporada__slider">
+                <!--Container de las imágenes-->
+                <div class="temporada__container">
+                    <img src="assets/temporada/pupusa_temporada.jpg" alt="Pupusa" class="temporada__img isVisible" title="Pupusa" loading="lazy">
+                    <img src="assets/temporada/poutine_temporada.jpg" alt="Poutine" class="temporada__img" title="Poutine" loading="lazy">
+                    <img src="assets/temporada/ropa_vieja_temporada.jpg" alt="Ropa" class="temporada__img" title="Ropa" loading="lazy">
+                    <img src="assets/temporada/pina_colada_temporada.jpg" alt="Colada" class="temporada__img" title="Colada" loading="lazy">
+                    <img src="assets/temporada/butter_tarts_temporada.jpg" alt="Butter" class="temporada__img" title="Butter" loading="lazy">
+                </div>
+                <!--Botones de siguiente y anterior-->
+                <button class="temporada__arrow arrownext" title="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                  </svg>
+                </button>
+                <button class="temporada__arrow arrowprev" title="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                  </svg>
+                </button>
+                <!--Botones circulares de abajo-->
+                <ul class="temporada__ul">
+                    <li class="temporada__li">
+                        <button class="temporada__btn esActive" title="punto"></button>
+                    </li>
+                    <li class="temporada__li">
+                        <button class="temporada__btn" title="punto"></button>
+                    </li>
+                    <li class="temporada__li">
+                        <button class="temporada__btn" title="punto"></button>
+                    </li>
+                    <li class="temporada__li">
+                        <button class="temporada__btn" title="punto"></button>
+                    </li>
+                    <li class="temporada__li">
+                        <button class="temporada__btn" title="punto"></button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--En la segunda sección se va a mostrar una fotografía del nuevo restaurante que se abrió.-->
+        <section class="partes restaurante">
+            <h2 class="partes__titulo">Descubre nuestro nuevo destino gastronómico</h2>
+            <picture class="restaurante__picture">
+                <img src="assets/somos/cocktail_wooden_restaurant.jpg" alt="Restaurante" class="restaurante__img" title="Restaurante" loading="lazy">
+            </picture>
+        </section>
+        <!--En la tercera sección se va a mostrar un lightbox de los 4 platos icónicos del restaurante.-->
+        <section class="partes iconicos">
+            <h2 class="partes__titulo">Conoce nuestros icónicos culinarios</h2>
+            <div class="iconicos__grid">
+                <img src="assets/iconicos/malbec_iconicos.jpg" alt="Malbec" class="iconicos__img" title="Malbec" loading="lazy">
+                <img src="assets/iconicos/jerck_chicken_iconicos.jpg" alt="Jerck" class="iconicos__img" title="Jerck" loading="lazy">
+                <img src="assets/iconicos/milhoja_iconicos.png" alt="Milhojas" class="iconicos__img" title="Milhojas" loading="lazy">
+                <img src="assets/iconicos/bufalo_wings_iconicos.jpg" alt="Bufalo" class="iconicos__img" title="Bufalo" loading="lazy">
+            </div>
+            <div class="iconicos__lightbox">
+                <img src="assets/iconicos/malbec_iconicos.jpg" alt="Fotos" class="lightbox__img" title="Fotos" loading="lazy">
+                <button class="lightbox__btn" title="equis">&#10006;</button>
+            </div>
+        </section>
+        <!--En la última sección se va a mostrar 5 cards de reseñas de los comensales.-->
+        <section class="parrtes comentarios">
+            <h2 class="partes__titulo">Lo que opinan nuestros comensales</h2>
+            <div class="comentarios__container">
+                <div class="comentarios__cards">
+                    <picture class="comentarios__picture">
+                        <img src="assets/rostros/luisa.jpg" alt="Luisa" class="comentarios__imgprofile" title="Luisa" loading="lazy">
+                    </picture>
+                    <h3 class="comentarios__user">Luisa</h3>
+                    <p class="comentarios__opinion">¡Qué delicia de lugar! El ambiente es relajado y perfecto para una cena en pareja o con amigos. La carta ofrece una gran variedad de opciones y todas las que probamos fueron deliciosas. El personal fue amable y eficiente, haciendo de nuestra visita una experiencia muy agradable. Sin duda, uno de los mejores restaurantes de la ciudad.</p>
+                    <div class="comentarios__puntos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="comentarios__cards">
+                    <picture class="comentarios__picture">
+                        <img src="assets/rostros/paula.jpg" alt="Paula" class="comentarios__imgprofile" title="Paula" loading="lazy">
+                    </picture>
+                    <h3 class="comentarios__user">Paula</h3>
+                    <p class="comentarios__opinion">Tuve una experiencia increíble en este restaurante. La comida era deliciosa y se notaba que estaba hecha con ingredientes frescos y de alta calidad. El personal fue muy atento y nos hicieron sentir muy bienvenidos. El ambiente era moderno y chic, perfecto para una noche con amigos. Definitivamente lo recomendaré a todos.</p>
+                    <div class="comentarios__puntos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="comentarios__cards">
+                    <picture class="comentarios__picture">
+                        <img src="assets/rostros/daniela.jpg" alt="Daniela" class="comentarios__imgprofile" title="Daniela" loading="lazy">
+                    </picture>
+                    <h3 class="comentarios__user">Daniela</h3>
+                    <p class="comentarios__opinion">La verdad es que quizás no esperaba una cocina tan elaborada, pero me ha sorprendido gratamente. Tomamos el asado argentino y realmente todo espectacular, sabores, texturas, presentación.... Los postres sin palabras, exquisitos y "mágicos". Si tuviera que poner alguna pega sería la falta de intimidad y el ruido en general en el caso de ir en pareja.</p>
+                    <div class="comentarios__puntos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half star" viewBox="0 0 16 16">
+                        <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="comentarios__cards">
+                    <picture class="comentarios__picture">
+                        <img src="assets/rostros/pedro.jpg" alt="Pedro" class="comentarios__imgprofile" title="Pedro" loading="lazy">
+                    </picture>
+                    <h3 class="comentarios__user">Pedro</h3>
+                    <p class="comentarios__opinion">Fantástico!! Buen servicio y magnifica comida. Recomendable!!! Comida elaborada y ambiente impecable. MAITRE preocupado del servicio.</p>
+                    <div class="comentarios__puntos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="comentarios__cards">
+                    <picture class="comentarios__picture">
+                        <img src="assets/rostros/camila.jpg" alt="Camila" class="comentarios__imgprofile" title="Camila" loading="lazy">
+                    </picture>
+                    <h3 class="comentarios__user">Camila</h3>
+                    <p class="comentarios__opinion">Sin duda algo innovador en la cocina. Comida más que aceptable y un buen servicio, una buena opción a la hora de degustar cocina tradicional de primera calidad.</p>
+                    <div class="comentarios__puntos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill star" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half star" viewBox="0 0 16 16">
+                        <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                        </svg>
+                    </div>
+                </div>          
+            </div>
+        </section>
+    </main>
+    <!--El footer va tres partes dividas en con la parte a (Logo y las redes sociales), el slogan y la parte b (dos links a la página de contacto y el copyright)-->
+    <footer class="footer">
+        <!--En la primera parte está el logo y las redes sociales-->
+        <div class="footer__partea">
+            <picture class="footer__picture">
+                <img src="assets/logo/logotipo.webp" alt="Logo" class="footer__logo" title="Logo">
+            </picture>
+            <!--Las redes sociales van a ser puestas como un menú de navegación-->
+            <div class="footer__redes redes">
+                <div class="redes__wrapper">
+                    <div class="redes__menu">
+                        <div class="redes__follow">Follow us</div>
+                        <div class="redes__line"></div>
+                        <div class="redes__nav"> 
+                            <a href="https://www.facebook.com/" class="redes__link" title="Facebook" target="_blank" rel="noreferrer">Facebook</a>
+                            <a href="https://www.instagram.com/" class="redes__link" title="Instagram" target="_blank" rel="noreferrer">Instagram</a>
+                            <a href="https://x.com/i/flow/login" class="redes__link" title="Twitter" target="_blank" rel="noreferrer">Twitter</a>
+                            <a href="https://www.youtube.com/" class="redes__link" title="Youtube" target="_blank" rel="noreferrer">Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--En la segunda parte está el slogan del restaurante-->
+        <h3 class="footer__slogan">Les ofrecemos un viaje culinario</h3>
+        <!--En la tercera parte estarán las partes para trabajar en el restaurante, dejar reseñas y el copyright-->
+        <div class="footer__parteb">
+            <p class="footer__opinion"><a href="contacto.html" title="Escuchamos">Te escuchamos</a></p>
+            <p class="footer__copy">© 2010 Serenata de sabores</p>
+            <p class="footer__trabaja"><a href="contacto.html" title="Trabaja">Trabaja con nosotros</a></p>
+        </div>
+    </footer>
+</body>
+</html>

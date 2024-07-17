@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Serenata de Sabores - Recorre nuestro exquisito menú.</title>
+    <meta name="title" content="Serenata de Sabores - Recorre nuestro exquisito menú." />
+    <meta name="description" content="Descubre el variado y exquisito menú de Serenata de Sabores. Deléitete con nuestras creaciones culinarias inspiradas en sabores de toda América." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bivi15.github.io/serenatadesabores/platos.html" />
+    <meta property="og:title" content="Serenata de Sabores - Recorre nuestro exquisito menú." />
+    <meta property="og:description" content="Descubre el variado y exquisito menú de Serenata de Sabores. Deléitete con nuestras creaciones culinarias inspiradas en sabores de toda América." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bivi15.github.io/serenatadesabores/platos.html" />
+    <meta property="twitter:title" content="Serenata de Sabores - Recorre nuestro exquisito menú." />
+    <meta property="twitter:description" content="Descubre el variado y exquisito menú de Serenata de Sabores. Deléitete con nuestras creaciones culinarias inspiradas en sabores de toda América." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/platos.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--El header tiene la misma distribución del Homepage-->
+    <header class="header">
+        <p class="header__p"><a href="platos.html" title="Menú">Sumérgete en nuestro delicioso menú!</a></p>
+        <!--El nombre del restaurante va a redirigir siempre al Homepage-->
+        <h1 class="header__title"><a href="index.html" title="Homepage">Serenata de Sabores</a></h1>
+        <div class="header__wrapper">
+            <picture class="header__picture">
+                <img src="assets/logo/logo.webp" alt="Logo" class="header__logo" title="Logo">
+            </picture>
+            <!--El menú tipo hamburguesa se va a desplegar cubriendo toda la página y va a contar con 5 links-->
+            <nav class="header__nav">
+                <div class="header__menu">
+                    <div class="header__line linea"></div>
+                    <div class="header__line lineb"></div>
+                    <div class="header__line linec"></div>
+                </div>
+                <div class="header__bgcover"></div>
+                <ul class="header__navlist">
+                    <li class="header__navitem">
+                        <a href="ubicaciones.html" class="header__navlink" title="Ubicación">Ubicación</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="somos.html" class="header__navlink" title="Somos">Quiénes somos</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="ayudante.html" class="header__navlink" title="Ayudante">Ayudante de cocina</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="platos.html" class="header__navlink" title="Menú">Menú</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="contacto.html" class="header__navlink" title="Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--El main va a contar con cinco secciones donde van a estar las entradas, platos fuertes, bebidas con alcohol, bebidas sin alcohol y postres. Todos dentro de acordeones-->
+    <main class="main">
+        <h2 class="titulo__menu">¡Deleita a tus ojos!</h2>
+        <!--Títulos para ir las secciones-->
+        <div class="opcion">
+            <h3 class="opcion__menu"><a href="#entradas" title="Entradas">Entradas</a></h3>
+            <h3 class="opcion__menu"><a href="#fuertes" title="Fuertes">Platos fuertes</a></h3>
+            <h3 class="opcion__menu"><a href="#alcoholicas" title="Alcoholicas">Bebidas alcohólicas</a></h3>
+            <h3 class="opcion__menu"><a href="#bebidas" title="Bebidas">Bebidas no alcohólicas</a></h3>
+            <h3 class="opcion__menu"><a href="#postres" title="postres">Postres</a></h3>
+        </div>
+        <!--Sección de entrada que se va a hacer en acordeón con seis opciones-->
+        <section class="entrada" id="entradas">
+            <h3 class="entrada__titulo">Entradas</h3>
+            <div class="acordeon">
+                <div class="bloque Activo">
+                    <h4 class="titulom">Ceviche peruano <span>(perú)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/entradas/ceviche_peruano_menu.jpg" alt="Ceviche" title="Ceviche" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Pescado fresco marinado en jugo de limón, mezclado con cebolla, cilantro y ají; servido con choclo y camote.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Empanadas argentinas <span>(argentina)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/entradas/empanadas_argentinas_menu.jpg" alt="Empanada" title="Empanada" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Empanadas de carne sazonadas con especias tradicionales, horneadas hasta alcanzar una perfección dorada.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Tacos al pastor <span>(méxico)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/entradas/tacos_al_pastor_menu.jpg" alt="Tacos" title="Tacos" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Tacos mexicanos rellenos de cerdo marinado, piña, cebolla, servidos con salsa de tomatillo.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Arepas venezolanas <span>(venezuela)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/entradas/arepa_venezolana_menu.jpg" alt="Arepas" title="Arepas" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Arepas de maíz rellenas dee queso y carne mechada, servidas con guasacaca.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Patacones colombianos <span>(colombia)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/entradas/patacones_colombianos_menu.jpg" alt="Patacones" title="Patacones" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Plátanos verdes fritos, servidos con hogao y queso fresco.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Johnnycakes <span>(belice)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/entradas/jhonycakes_menu.jpg" alt="Johnnycakes" title="Johnnycakes" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Panes planos fritos hechos con haria de maíz, servidos con mantequilla y miel.</p>
+                </div>
+            </div>
+        </section>
+        <!--Sección de platos fuertes que se va a hacer en acordeón con seis opciones-->
+        <section class="fuertes" id="fuertes">
+            <h3 class="fuertes__titulo">Platos fuertes</h3>
+            <div class="acordeon">
+                <div class="bloque Activo">
+                    <h4 class="titulom">Asado argentino <span>(argentina)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/platos_fuertes/asado_argentino_menu.jpg" alt="Asado" title="Asado" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Selección de carnes argentinas a la parrilla, acompañadas de chimichurri y papas asadas.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Feijoada brasileña <span>(brasil)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/platos_fuertes/feijoada_menu.jpg" alt="Feijoada" title="Feijoada" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Estofado de frijoles negros con carne de cerdo, servido con arroz, naranjas y farofa.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Pollo a la brasa <span>(perú)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/platos_fuertes/pollo_a_la_brasa_menu.jpg" alt="Pollo" title="Pollo" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Pollo marinado en especias peruanas y asado, acompañado de papas fritas y ensalada.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Bandeja paisa <span>(colombia)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/platos_fuertes/bandeja_paisa_menu.jpg" alt="Bandeja" title="Bandeja" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Arroz, frijoles, carne molida, chicharrón, chorizo, huevo frito, plátano maduro, arepa y aguacate.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Barbecue ribs <span>(estados unidos)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/platos_fuertes/barbecue_ribs_menu.jpg" alt="Barbecue" title="Barbecue" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Costillas de cerdo asadas lentamente con salsa barbacoa, servidas con ensalada de col y mazorca de maiz.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Chiles de nogada <span>(méxico)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/platos_fuertes/chiles_de_nogada_menu.jpg" alt="Chiles" title="Chiles" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Chiles poblanos rellenos de picadillo de carne, cubiertos con salsa de nuez y granada.</p>
+                </div>
+            </div>
+        </section>
+        <!--Sección de bebidas alcohólicas que se va a hacer en acordeón con seis opciones-->
+        <section class="alcoholicas" id="alcoholicas">
+            <h3 class="alcoholicas__titulo">Bebidas alcohólicas</h3>
+            <div class="acordeon">
+                <div class="bloque Activo">
+                    <h4 class="titulom">Pisco sour <span>(perú)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_alcoholicas/pisco_sour_menu.jpg" alt="Pisco" title="Pisco" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Cóctel clásico de Pisco, jugo de limón, jarabe de goma y clara de huevo.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Caipirinha <span>(brasil)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_alcoholicas/caipirinha_menu.jpg" alt="Caipirinha" title="Caipirinha" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Cachaça, lima fresca, azúcar y hielo triturado.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Margarita <span>(méxico)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_alcoholicas/margarita_menu.jpg" alt="Margarita" title="Margarita" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Tequila, triple sec, jugo de limón y un borde de sal.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Mojito <span>(cuba)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_alcoholicas/mojito_menu.jpg" alt="Mojito" title="Mojito" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Ron blanco, hojas de menta, jugo de limón, azúcar y soda.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Mint julep <span>(estados unidos)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_alcoholicas/mint_julep_menu.jpg" alt="Mint" title="Mint" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Bourbon, hojas de menta, azúcar y agua, servido con hielo picado.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Caesar <span>(canadá)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_alcoholicas/caesar_menu.jpg" alt="Caesar" title="Caesar" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Vodka, Clamato, salsa inglesa, tabasco y adornado con apio y una rodaja de lima.</p>
+                </div>
+            </div>
+        </section>
+        <!--Sección de bebidas no alcohólicas que se va a hacer en acordeón con seis opciones-->
+        <section class="bebidas" id="bebidas">
+            <h3 class="bebidas__titulo">Bebidas no alcohólicas</h3>
+            <div class="acordeon">
+                <div class="bloque Activo">
+                    <h4 class="titulom">Agua de jamaica <span>(méxico)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_no_alcoholicas/agua_de_jamaica_menu.jpg" alt="Jamaica" title="Jamaica" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Infusión de flor de Jamaica, endulzada y servida fría.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Chicha morada <span>(perú)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_no_alcoholicas/chica_morada_menu.jpg" alt="Chicha" title="Chicha" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Bebida de maíz morado con piña, canela y clavo de olor.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Batido de mango <span>(venezuela)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_no_alcoholicas/batido_de_mango_menu.jpg" alt="Batido" title="Batido" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Batido de mango fresco con leche.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Jugo de maracuyá <span>(colombia)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_no_alcoholicas/jugo_de_maracuya_menu.jpg" alt="Jugo" title="Jugo" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Jugo fresco de maracuyá, endulzado y servido frío.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Limonada de coco <span>(república dominicana)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_no_alcoholicas/limonada_de_coco_menu.jpg" alt="Limonada" title="Limonada" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Limonada con un toque de crema de coco.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Horchata <span>(el salvador/méxico)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/bebidas_no_alcoholicas/horchata_menu.jpg" alt="Horchata" title="Horchata" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Bebida de arroz y canela, endulzada y servida fría.</p>
+                </div>
+            </div>
+        </section>
+        <!--Sección de los postres que se va a hacer en acordeón con seis opciones-->
+        <section class="postres" id="postres">
+            <h3 class="postres__titulo">Postres</h3>
+            <div class="acordeon">
+                <div class="bloque Activo">
+                    <h4 class="titulom">Tres leches <span>(méxico)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/postres/tres_leches_menu.jpg" alt="Leches" title="Leches" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Pastel esponjoso empapado en una mezcla de tres leches, cubierto con crema batida.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Brigadeiros <span>(brasil)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/postres/brigadeiros_menu.jpg" alt="Brigadeiros" title="Brigadeiros" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Bolitas de chocolate y leche condensada, espolvoreadas con fideos de chocolate.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Alfajores <span>(argentina)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/postres/alfajores_menu.jpg" alt="Alfajores" title="Alfajores" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Galletas rellenas de dulce de leche, cubiertas con azúcar impalpable.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Torta de tres leches <span>(venezuela)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/postres/torta_de_tres_leches_menu.jpg" alt="Torta" title="Torta" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Bizcocho empapado en tres tipos de leche, decorado con merengue.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Flan de coco <span>(puerto rico)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/postres/flan_de_coco_menu.jpg" alt="Flan" title="Flan" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Flan de leche de coco, cubierto con caramelo.</p>
+                </div>
+                <div class="bloque">
+                    <h4 class="titulom">Apple pie <span>(estados unidos)</span></h4>
+                    <picture class="picture">
+                        <img src="assets/menu/postres/apple_pie_menu.jpg" alt="Apple" title="Apple" class="img" loading="lazy">
+                    </picture>
+                    <p class="p">Tarta de manzana clásica, servia con una bola de helado de vainilla.</p>
+                </div>
+            </div>
+        </section>
+        <div class="comentario">
+            <p class="comentario__p">Este menú ha sido cuidadosamente diseñado para llevarte en un viaje gastronómico por toda América, celebrando los sabores únicos y emblemáticos de cada país. ¡Esperamos que disfrutes de esta experiencia culinaria en <span>Serenata de sabores</span>!</p>
+        </div>
+    </main>
+    <!--El footer va a tener la misma distribuación que en el homepage-->
+    <footer class="footer">
+        <!--En la primera parte está el logo y las redes sociales-->
+        <div class="footer__partea">
+            <picture class="footer__picture">
+                <img src="assets/logo/logotipo.webp" alt="Logo" class="footer__logo" title="Logo" loading="lazy">
+            </picture>
+            <!--Las redes sociales van a ser puestas como un menú de navegación-->
+            <div class="footer__redes redes">
+                <div class="redes__wrapper">
+                    <div class="redes__menu">
+                        <div class="redes__follow">Follow us</div>
+                        <div class="redes__line"></div>
+                        <div class="redes__nav"> 
+                            <a href="https://www.facebook.com/" class="redes__link" title="Facebook" target="_blank" rel="noreferrer">Facebook</a>
+                            <a href="https://www.instagram.com/" class="redes__link" title="Instagram" target="_blank" rel="noreferrer">Instagram</a>
+                            <a href="https://x.com/i/flow/login" class="redes__link" title="Twitter" target="_blank" rel="noreferrer">Twitter</a>
+                            <a href="https://www.youtube.com/" class="redes__link" title="Youtube" target="_blank" rel="noreferrer">Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--En la segunda parte está el slogan del restaurante-->
+        <h3 class="footer__slogan">Les ofrecemos un viaje culinario</h3>
+        <!--En la tercera parte estarán las partes para trabajar en el restaurante, dejar reseñas y el copyright-->
+        <div class="footer__parteb">
+            <p class="footer__opinion"><a href="contacto.html" title="Escuchamos">Te escuchamos</a></p>
+            <p class="footer__copy">© 2010 Serenata de sabores</p>
+            <p class="footer__trabaja"><a href="contacto.html" title="Trabaja">Trabaja con nosotros</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Serenata de Sabores - Contacta con nosotros.</title>
+    <meta name="title" content="Serenata de Sabores - Contacta con nosotros." />
+    <meta name="description" content="Ponte en contacto con Serenata de Sabores. Has reservas, consultas y comentarios. Igualmente, puedes buscar ofertas de trabajo con nosotros." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bivi15.github.io/serenatadesabores/contacto.html" />
+    <meta property="og:title" content="Serenata de Sabores - Contacta con nosotros." />
+    <meta property="og:description" content="Ponte en contacto con Serenata de Sabores. Has reservas, consultas y comentarios. Igualmente, puedes buscar ofertas de trabajo con nosotros." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bivi15.github.io/serenatadesabores/contacto.html" />
+    <meta property="twitter:title" content="Serenata de Sabores - Contacta con nosotros." />
+    <meta property="twitter:description" content="Ponte en contacto con Serenata de Sabores. Has reservas, consultas y comentarios. Igualmente, puedes buscar ofertas de trabajo con nosotros." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/menu_hamburguesa.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--El header tiene la misma distribución del Homepage-->
+    <header class="header">
+        <p class="header__p"><a href="platos.html" title="Menú">Sumérgete en nuestro delicioso menú!</a></p>
+        <!--El nombre del restaurante va a redirigir siempre al Homepage-->
+        <h1 class="header__title"><a href="index.html" title="Homepage">Serenata de Sabores</a></h1>
+        <div class="header__wrapper">
+            <picture class="header__picture">
+                <img src="assets/logo/logo.webp" alt="Logo" class="header__logo" title="Logo">
+            </picture>
+            <!--El menú tipo hamburguesa se va a desplegar cubriendo toda la página y va a contar con 5 links-->
+            <nav class="header__nav">
+                <div class="header__menu">
+                    <div class="header__line linea"></div>
+                    <div class="header__line lineb"></div>
+                    <div class="header__line linec"></div>
+                </div>
+                <div class="header__bgcover"></div>
+                <ul class="header__navlist">
+                    <li class="header__navitem">
+                        <a href="ubicaciones.html" class="header__navlink" title="Ubicación">Ubicación</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="somos.html" class="header__navlink" title="Somos">Quiénes somos</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="ayudante.html" class="header__navlink" title="Ayudante">Ayudante de cocina</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="platos.html" class="header__navlink" title="Menú">Menú</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="contacto.html" class="header__navlink" title="Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--El main se va a tener cuatro partes.-->
+    <main class="main">
+        <!--Título de página-->
+        <section class="titulo">
+            <h2 class="titulo__contacto">Contacto</h2>
+            <h2 class="titulo__mensaje">Mándanos un mensaje</h2>
+        </section>
+        <!--Opciones para ir a los formularios-->
+        <div class="opciones">
+            <h3 class="opciones__escuchamos"><a href="#escuchamos" title="Escuchamos">Te escuchamos</a></h3>
+            <h3 class="opciones__trabaja"><a href="#trabaja" title="Trabaja">Trabaja con nosotros</a></h3>
+        </div>
+        <!--Formulario de te escuchamos-->
+        <div class="escuchamos" id="escuchamos">
+            <div class="form">
+                <h2 class="escuchamos__titulo">Te escuchamos</h2>
+            </div>
+            <div class="container">
+                <form action="#" method="get">
+                    <div class="escuchamos__radio">
+                        <input type="radio" name="aceptar" id="aceptar">Acepto políticas de tratamiento de datos
+                    </div>
+                    <div class="escuchamos__pais">
+                        <h4 class="escuchamos__oppais">País</h4>
+                        <select name="Pais">
+                            <option value="ninguno">Elige un país</option>
+                            <option value="chile">Chile</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="espanya">España</option>
+                            <option value="mexico">México</option>
+                            <option value="panama">Panamá</option>
+                        </select>
+                    </div>
+                    <div class="escuchamos__nombre">
+                        <label for="nombre">Nombres y Apellidos</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombres y Apellidos">
+                    </div>
+                    <div class="escuchamos__asunto">
+                        <label for="nombre">Asunto</label>
+                        <input type="text" name="asunto" id="asunto" placeholder="Solicitud, Sugerencia, Queja, Felicitaciones">
+                    </div>
+                    <div class="escuchamos__mensaje">
+                        <label for="nombre">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <!--Formulario de trabaja con nosotros-->
+        <div class="trabaja" id="trabaja">
+            <div class="form">
+                <h2 class="trabaja__titulo">Trabaja con nosotros</h2>
+            </div>
+            <div class="container">
+                <form action="#" method="get">
+                    <div class="trabaja__radio">
+                        <input type="radio" name="acepto" id="acepto">Acepto políticas de tratamiento de datos
+                    </div>
+                    <div class="trabaja__pais">
+                        <h4 class="trabaja__oppais">País</h4>
+                        <select name="Pais">
+                            <option value="ninguno">Elige un país</option>
+                            <option value="chile">Chile</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="espanya">España</option>
+                            <option value="mexico">México</option>
+                            <option value="panama">Panamá</option>
+                        </select>
+                    </div>
+                    <div class="trabaja__nombre">
+                        <label for="nombre">Nombres y Apellidos</label>
+                        <input type="text" name="nombres" id="nombres" placeholder="Nombres y Apellidos">
+                    </div>
+                    <div class="trabaja__puesto">
+                        <h4 class="trabaja__oppuesto">Puesto de trabajo</h4>
+                        <select name="Puesto">
+                            <option value="ninguno">Elige una opción</option>
+                            <option value="camarero">Camarero/a</option>
+                            <option value="chef">Chef</option>
+                            <option value="pastelero">Pastelero</option>
+                            <option value="ayudante">Ayudante de cocina</option>
+                        </select>
+                    </div>
+                    <div class="trabaja__horario">
+                        <h4 class="trabaja__ophorario">Horario de entrevista</h4>
+                        <select name="Horario">
+                            <option value="ninguno">Elige una opción</option>
+                            <option value="diez">10:30am</option>
+                            <option value="once">11:00am</option>
+                            <option value="doce">12:00</option>
+                            <option value="una">1:00pm</option>
+                            <option value="unamedia">1:30pm</option>
+                            <option value="dos">2:00pm</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <!--El footer va a tener la misma distribuación que en el homepage-->
+    <footer class="footer">
+        <!--En la primera parte está el logo y las redes sociales-->
+        <div class="footer__partea">
+            <picture class="footer__picture">
+                <img src="assets/logo/logotipo.webp" alt="Logo" class="footer__logo" title="Logo">
+            </picture>
+            <!--Las redes sociales van a ser puestas como un menú de navegación-->
+            <div class="footer__redes redes">
+                <div class="redes__wrapper">
+                    <div class="redes__menu">
+                        <div class="redes__follow">Follow us</div>
+                        <div class="redes__line"></div>
+                        <div class="redes__nav"> 
+                            <a href="https://www.facebook.com/" class="redes__link" title="Facebook" target="_blank" rel="noreferrer">Facebook</a>
+                            <a href="https://www.instagram.com/" class="redes__link" title="Instagram" target="_blank" rel="noreferrer">Instagram</a>
+                            <a href="https://x.com/i/flow/login" class="redes__link" title="Twitter" target="_blank" rel="noreferrer">Twitter</a>
+                            <a href="https://www.youtube.com/" class="redes__link" title="Youtube" target="_blank" rel="noreferrer">Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--En la segunda parte está el slogan del restaurante-->
+        <h3 class="footer__slogan">Les ofrecemos un viaje culinario</h3>
+        <!--En la tercera parte estarán las partes para trabajar en el restaurante, dejar reseñas y el copyright-->
+        <div class="footer__parteb">
+            <p class="footer__opinion"><a href="#escuchamos" title="Escuchamos">Te escuchamos</a></p>
+            <p class="footer__copy">© 2010 Serenata de sabores</p>
+            <p class="footer__trabaja"><a href="#trabaja" title="Trabaja">Trabaja con nosotros</a></p>
+        </div>
+    </footer>
+</body>
+</html>

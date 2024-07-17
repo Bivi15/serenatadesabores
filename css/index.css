@@ -1,0 +1,1352 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+p a {
+    display: inline;
+}
+
+img, picture, video, iframe, svg {
+    display: block;
+    width: 100%;
+    height: initial;
+
+}
+
+svg {
+    fill: currentColor;
+}
+
+form, input, label, select, option, textarea, button {
+    font-size: inherit;
+    font-family: inherit;
+    display: block;
+    background-color: transparent;
+}
+
+:root {
+    font-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lora", sans-serif, serifs;
+}
+/* Fin reset */
+
+/*tipogrrafía Lora CSS*/
+.lora {
+  font-family: "Lora", sans-serif, serif;
+  font-style: normal;
+}
+
+
+
+/* HEADER de todas las páginas */
+.header {
+    width: 100%;
+    min-height: 7.5rem;
+    /* background-color: rebeccapurple; */
+    position: relative;
+}
+.header__p {
+    width: 100%;
+    min-height: 1.875rem;
+    padding: .625rem 0;
+    background-color: #235A32;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header__wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+.header__picture {
+    width: 30%;
+    /* background-color: darkblue; */
+    position: absolute;
+    top: calc(30%);
+}
+.header__logo {
+    width: 12%;
+    margin: .3125rem 2.5rem;
+}
+.header__title {
+    width: 100%;
+    margin: auto;
+    padding-top: .9375rem;
+    font-size: 4em;
+    font-weight: 600;
+    text-align: center;
+}
+/*Lo que se quiere es hacer el menú de hamburgesa y que la lista con los links se oculten o muestren cuando se abra el menú*/
+.header__menu {
+    width: 3.4375rem;
+    height: 3.4375rem;
+    background-color: #235A32;
+    position: fixed;
+    top: 3.125rem;
+    right: 1.875rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: background-color 0.5s;
+}
+.hasChange .header__menu  {
+    background-color: #eef0eb;
+}
+.header__line {
+    width: 1.875rem;
+    height: .125rem;
+    margin: .125rem 0;
+    background-color: #eee;
+    transform-origin: right;
+}
+.hasChange .linea  {
+    transform: rotate(-40deg) translateY(-0.3125rem);
+    background-color: #68723E;
+}
+.hasChange .lineb  {
+    opacity: 0;
+}
+.hasChange .linec  {
+    transform: rotate(40deg) translateY(.3125rem);
+    background-color: #68723E;
+}
+.header__bgcover {
+    background-color: rgba(35, 90, 50, 0.9);
+    width: 2.8125rem;
+    height: 2.8125rem;
+    position: fixed;
+    top: 3.4375rem;
+    right: 2.1875rem;
+    z-index: 1;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+.hasChange .header__bgcover {
+    transform: scale(150);
+}
+.header__navlist {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4.375rem;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+}
+.hasChange .header__navlist {
+    opacity: 1;
+    visibility: visible;
+}
+.header__navitem {
+    margin: 1vh 0;
+}
+.header__navlink {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: .0625rem .0625rem .0313rem black;
+    letter-spacing: 0.4em;
+    color: #fff;
+    transition: letter-spacing 0.2s ease;
+}
+.header__navlink:hover {
+    text-shadow: .125rem .125rem .125rem black;
+    letter-spacing: 0.6em;
+}
+
+
+
+/*MAIN*/
+
+/*HOMEPAGE*/
+/*Estilos en común entre las secciones*/
+.partes {
+    width: 100%;
+    min-height: 37.5rem;
+    margin: .625rem auto;
+}
+.partes__titulo {
+    width: 80%;
+    background-color: #E1C888;
+    margin: auto;
+    padding: .625rem 4.375rem;
+    font-size: 2em;
+    font-weight: 400;
+}
+/*Primera sección, se busca tener un slide de 5 imágenes*/
+/*Se pasan las imagenes de los platos cuando se haga click en las flechas o en los botones, al mismo tiempo al hacer hover sobre la imagen se va a poder ver el nomnbre del plato*/
+.temporada__slider {
+    width: 90%;
+    margin: 1.875rem auto;
+    padding-top: 1.875rem;
+    position: relative;
+    overflow: hidden;
+}
+.temporada__container {
+    width: 70%;
+    min-height: 33.125rem;
+    margin: auto;
+    background-color: rgba(104, 114, 62, 0.398);
+    position: relative;
+}
+.temporada__img {
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: calc(15%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.temporada__img.isVisible {
+    opacity: 1;
+}
+.temporada__img:first-child {
+    position: static;
+}
+.temporada__arrow {
+    width: 2rem;
+    height: 2rem;
+    color: whitesmoke;
+    position: absolute;
+    top: calc(50% - 1rem);
+    cursor: pointer;
+}
+.arrownext {
+    right: 16.25rem;
+}
+.arrownext:hover {
+    opacity: 0.5;
+}
+.arrowprev {
+    left: 16.25rem;
+}
+.arrowprev:hover {
+    opacity: 0.5;
+}
+.temporada__ul {
+    width: 100%;
+    position: absolute;
+    bottom: 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.temporada__btn {
+    width: 1rem;
+    height: 1rem;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.temporada__btn.esActive {
+    background-color: antiquewhite;
+}
+
+/*Segunda sección donde se muestra una imagen*/
+.restaurante__picture {
+    width: 80%;
+    min-height: 3.125rem;
+    margin: 1.25rem auto;
+}
+.restaurante__img {
+    width: 90%;
+    margin: auto;
+}
+
+/*Tercera sección donde se muentra en un lightbox 4 imagenes*/
+.iconicos__grid {
+    width: 70%;
+    min-height: 31.25rem;
+    background-color: rgba(104, 114, 62, 0.502);
+    margin: 1rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.iconicos__img {
+    width: 100%;
+    margin: auto;
+    transition: all 450ms ease;
+}
+.iconicos__img:hover {
+    transform: translateY(-0.1875rem);
+    box-shadow: .1875rem .1875rem .1875rem rgba(50, 49, 49, 0.863);
+    cursor: pointer;
+}
+/*El lightbox muestra la imagen selecionada*/
+.iconicos__lightbox {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(1.5625rem);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.lightbox__img {
+    width: 55%;
+    height: 70vh;
+    border: .3125rem solid #e1c888d5;
+    box-shadow: .1875rem .1875rem .1875rem rgba(50, 49, 49, 0.863);
+}
+.lightbox__btn {
+    padding: 0.5rem 2rem;
+    margin-left: 61rem;
+    font-size: 2em;
+    color: #E1C888;
+}
+.lightbox__btn:hover {
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/*Última sección donde se van a tener 5 cards de opiniones */
+.comentarios__container {
+    width: 100%;
+    margin: 1.875rem auto .625rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: .625rem;
+}
+.comentarios__cards {
+    width: 21.875rem;
+    padding: .625rem;
+    background-color: rgba(104, 114, 62, 0.599);
+    border-radius: 5%;
+}
+.comentarios__imgprofile {
+    width: 7.5rem;
+    min-height: 6.25rem;
+    margin: auto 1.25rem;
+    background-color: red;
+    border-radius: 50%;
+}
+.comentarios__user {
+    padding-top: .625rem;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+}
+.comentarios__opinion {
+    padding: 1.25rem .9375rem;
+    font-size: 1em;
+}
+.comentarios__puntos {
+    width: 5.625rem;
+    margin: .125rem 3.125rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.star {
+    fill: gold;
+}
+
+
+
+/*UBICACIÓN*/
+/*Sección uno donde se muestra el mapa*/
+.mapa {
+    width: 80%;
+    min-height: 18.75rem;
+    margin: 1.25rem auto;
+}
+.mapa__titulo {
+    width: 100%;
+    background-color: #E1C888;
+    margin: auto;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+}
+.mapa__container {
+    width: 70%;
+    margin: auto;
+    padding: 2.5rem;
+    overflow: hidden;
+}
+.mapa__frame {
+    width: 100%;
+}
+
+/*Sección dos donde se va a tener un slider que ponga las ubicaciones destacadas*/
+.lugares {
+    width: 100%;
+    min-height: 25rem;
+    margin: .625rem auto;
+}
+.lugares__titulo {
+    width: 100%;
+    margin: auto;
+    background-color: #E1C888;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+} 
+/*Se pasan los nombres de las ubicaciones cuando se haga click en las fleechas*/
+.lugares__slider {
+    width: 70%;
+    margin: 1.875rem auto;
+    position: relative;
+    overflow: hidden;
+} 
+.lugares__container {
+    width: 100%;
+    background-color: rgba(104, 114, 62, 0.5);
+    position: relative;
+} 
+.lugares__pais {
+    width: 50%;
+    min-height: 18.75rem;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: calc(25%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+} 
+.lugares__pais.isVisible {
+    opacity: 1;
+}
+.lugares__pais:first-child {
+    position: static;
+}
+.lugares__ciudad {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-transform: capitalize;
+} 
+.lugares__ubicacion {
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+} 
+.lugares__arrow {
+    width: 2rem;
+    color: whitesmoke;
+    position: absolute;
+    top: calc(50% - 1rem);
+    cursor: pointer;
+} 
+.arrowsnext {
+    right: 7.5rem;
+} 
+.arrowsprev {
+    left: 7.5rem;
+} 
+.arrowsnext:hover, .arrowsprev:hover {
+    opacity: 0.5;
+}
+
+
+
+/*QUIENES SOMOS*/
+/*Se tiene una sección que con display: grid, va a estar dividido en dos columnas y seis filas*/
+.somos {
+    width: 100%;
+    min-height: 33.125rem;
+    margin: 3.125rem auto;
+    padding: 1.25rem 3.125rem;
+    background-color: rgba(225, 200, 136, 0.8);
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 3.75rem;
+}
+.somos__titulo {
+    width: 100%;
+    background-color: rgba(35, 90, 50, 0.5);
+    font-size: 2em;
+    font-weight: 500;
+    text-shadow: .1875rem .0625rem .1875rem rgba(255, 255, 255, 0.527);
+    text-align: center;
+}
+.somos picture {
+    width: 90%;
+    margin: auto;
+}
+.somos__picturehis {
+    grid-column: 1/2;
+}
+.somos__phis {
+    padding-bottom: .9375rem;
+}
+.somos p {
+    width: 85%;
+    font-size: 1.2em;
+    margin: auto;
+}
+.mision {
+    grid-column: 2/3;
+}
+.somos__imgvi {
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
+.somos__pvi {
+    grid-row: 6/7;
+}
+
+
+
+/*AYUDANTE DE COCINA*/
+.titulo__tip {
+    width: 100%;
+    margin: 1.25rem 0 0;
+    padding: 1.25rem .3125rem;
+    background-color: #E1C888;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+}
+.tips {
+    width: 90%;
+    margin: 2.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 1.25rem;
+}
+.tips__container {
+    width: 100%;
+    margin: .3125rem .625rem;
+    position: relative;
+    overflow: hidden;
+}
+.tips__img {
+    width: 100%;
+    margin: auto;
+    transition: transform 0.5s ease;
+}
+.tips__img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.tips__texto {
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: .0625rem .0625rem .0625rem rgba(134, 134, 134, 0.686);
+    color: black;
+    position: absolute;
+    top: calc(65%);
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: scale(0.5);
+}
+.tips__titulo {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.tips__container:hover .tips__texto {
+    opacity: 1;
+    transform: scale(1);
+    padding: 1.875rem;
+}
+
+
+
+/*MENÚ*/
+/*Título*/
+.titulo__menu {
+    width: 100%;
+    margin: .625rem 0;
+    padding: 1.25rem .3125rem;
+    background-color: #E1C888;
+    font-size: 2.4em;
+    font-weight: 400;
+    text-align: center; 
+}
+
+span {
+    font-weight: bold;
+}
+/*Opciones para ir a cada una de las secciones del menú*/
+.opcion {
+    width: 100%;
+    min-height: 3.75rem;
+    margin: 3.125rem auto;
+    background-color: rgba(35, 90, 50, 0.7);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.opcion__menu:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/*Secciones de los cinco acordeones*/
+.entrada, .fuertes, .alcoholicas, .bebidas, .postres {
+    width: 100%;
+    margin-bottom: 3.125rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+.entrada__titulo, .fuertes__titulo, .alcoholicas__titulo, .bebidas__titulo, .postres__titulo {
+    width: 100%;
+    padding: .625rem 4.375rem;
+    background-color: #E1C888;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-shadow: .125rem .0625rem .125rem rgba(255, 255, 255, 0.737);
+}
+.acordeon {
+    width: 80%;
+    /* background-color: rgba(35, 90, 50, 0.7); */
+    border-radius: 1.25rem;
+    margin: 0.5rem auto;
+    padding: 2rem;
+}
+.bloque {
+    background-color: rgba(225, 200, 136, 0.6);
+    box-shadow: -0.2rem -0.1rem 0.1rem rgba(158, 158, 158, 0.595);
+    border-radius: 1.25rem;
+    margin: 0 0 1rem;
+    padding: 1rem;
+}
+.titulom {
+    font-size: 2em;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: rgba(104, 114, 62, 0.501);
+    box-shadow: -0.2rem -0.1rem 0.1rem rgba(158, 158, 158, 0.595);
+    border-radius: 1.25rem;
+    margin: 0 0 1rem;
+    padding: 1rem;
+}
+.titulom:hover {
+    cursor: pointer;
+    background-color: rgba(35, 90, 50, 0.502);
+    border: .0313rem solid whitesmoke;
+    border-radius: 1.25rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(101, 101, 101, 0.595);
+}
+.picture {
+    width: 60%;
+    margin: auto;
+    height: 0;
+    overflow: hidden;
+    transition: height 4s ease;
+}
+.img {
+    width: 65%;
+    margin: auto;
+}
+.p {
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: .9375rem;
+    height: 0;
+    overflow: hidden;
+    transition: height 4s ease;
+}
+.bloque.isActivo .p, .bloque.isActivo .picture {
+    height: auto;
+}
+
+/*El comentario final*/
+.comentario {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 3.125rem;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+
+
+/*CONTACTO*/
+.titulo {
+    width: 100%;
+    min-height: 7.5rem;
+    background-color: #E1C888;
+    margin: 1.25rem auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.titulo__contacto {
+    font-size: 4em;
+    font-weight: 400;
+    padding-bottom: .3125rem;
+}
+.titulo__mensaje {
+    font-size: 1.3em;
+    font-weight: 200;
+}
+
+/*Opciones para ir a los dos formularios, con un color de background*/
+.opciones {
+    width: 100%;
+    min-height: 3.75rem;
+    background-color: rgba(35, 90, 50, 0.7);
+    font-size: 1.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.opciones__escuchamos:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+.opciones__trabaja:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/*Modificaciones generales del form*/
+input[type="radio"] {
+    display: inline-block;
+    cursor: pointer;
+}
+input[type="text"] {
+    background-color: rgba(176, 156, 105, 0.7);
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border-radius: 1.875rem;
+    font-size: 1.2rem;
+    color: #777;
+    margin: 0.5rem 0;
+} 
+textarea {
+    background-color: rgba(176, 156, 105, 0.7);
+    width: 100%;
+    height: 12.5rem;
+    border-radius: .625rem;
+    font-size: 1.2rem;
+    color: #777;
+}
+input[type="text"]::placeholder {
+    color: #d2d2d2;
+}
+select {
+    border: .0625rem solid rgba(0, 0, 0, 0.667);
+    border-radius: .25rem;
+}
+input[type="submit"] {
+    background-color: rgba(225, 200, 136, 0.863);
+    border-radius: .625rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.809);
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+}
+.form {
+    width: 50%;
+    margin: auto;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.container  {
+    width: 60%;
+    border: .125rem solid #E1C888;
+    border-radius: 1.875rem;
+    box-shadow: .125rem .125rem .0625rem rgba(0, 0, 0, 0.384);
+    background-color: rgba(225, 200, 136, 0.6);
+    margin: 2rem auto;
+    padding: 2.5rem;
+}
+
+/*Formulario de te escuchamos*/
+.escuchamos__radio, .escuchamos__pais, .escuchamos__mensaje {
+    padding-bottom: 1.25rem;
+}
+
+.escuchamos {
+    width: 100%;
+    min-height: 46.875rem;
+    margin: 1.25rem auto;
+}
+
+/*Formulario de trabaja con nosotros*/
+.trabaja {
+    width: 100%;
+    min-height: 34.375rem;
+    margin: 1.25rem auto;
+}
+
+.trabaja__radio, .trabaja__pais, .trabaja__puesto, .trabaja__horario {
+    padding-bottom: 1.25rem;
+}
+
+
+
+/*FOOTER para todas las páginas*/
+/*Primera parte donde está el logo y las redes sociales*/
+.footer {
+    width: 95%;
+    min-height: 5.625rem;
+    margin: auto;
+    border-top: .125rem solid rgba(0, 0, 0, 0.336);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footer__partea {
+    width: 100%;
+    min-height: 5rem;
+    margin: .3125rem auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__picture {
+    width: 100%;
+    margin: .625rem auto 0;
+}
+.footer__logo {
+    width: 50%;
+    margin: auto 6.25rem;
+}
+
+/*En las redes se quiere que vayan apareciendo desde abajo cuando se hace hover sobre el follow y vayan subiendo de a pocos*/
+.footer__redes {
+    width: 80%;
+    min-height: 1.5625rem;
+    margin: .625rem 0;
+}
+.redes__wrapper {
+    width: 100%;
+}
+.redes__menu {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: none;
+}
+.redes__menu:hover {
+    pointer-events: auto;
+}
+.redes__follow, .redes__link {
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-right: 2rem;
+}
+.redes__follow {
+    width: 80%;
+    pointer-events: auto;
+}
+.redes__line {
+    width: 6.25rem;
+    height: .1rem;
+    margin-right: 5rem;
+    position: relative;
+}
+.redes__line::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    transition: width 0.5s ease;
+}
+.redes__menu:hover .redes__line::after {
+    width: 100%;
+}
+.redes__nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.redes__link {
+    pointer-events: auto;
+    position: relative;
+    top: 5rem;
+    opacity: 0;
+}
+.redes__menu:hover .redes__link {
+    top: 0;
+    opacity: 1;
+}
+.redes__link:nth-child(1) {
+    transition: top 0.4s 0.1s, opacity 0.4s 0.1s;
+}
+.redes__link:nth-child(2) {
+    transition: top 0.4s 0.2s, opacity 0.4s 0.2s;
+}
+.redes__link:nth-child(3) {
+    transition: top 0.4s 0.3s, opacity 0.4s 0.3s;
+}
+.redes__link:nth-child(4) {
+    transition: top 0.4s 0.4s, opacity 0.4s 0.4s;
+}
+.redes__link:nth-child(5) {
+    transition: top 0.4s 0.5s, opacity 0.4s 0.5s;
+}
+/*Segunda parte es el slogan*/
+.footer__slogan {
+    width: 100%;
+    margin: 1.25rem auto;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.56);
+}
+/*Links donde se dirigen a la página de contacto*/
+.footer__parteb {
+    width: 100%;
+    min-height: 3.125rem;
+    margin: 1.875rem auto;
+    background-color: rgba(35, 90, 50, 0.7);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__opinion {
+    font-weight: 600;
+}
+.footer__copy {
+    font-size: 1em;
+}
+.footer__trabaja {
+    font-weight: 600;
+}
+
+
+
+/*Media Queries*/
+
+@media (max-width: 1440px) {
+    /*FOOTER*/
+    .redes__follow, .redes__link {
+        margin-right: 3rem;
+    }
+    .footer__logo {
+        margin: 0 auto auto;
+    }
+}
+@media (max-width: 1200px) {
+    /* HEADER*/
+    .header__picture {
+        width: 40%;
+        top: calc(30%);
+    }
+    .header__p {
+        width: 100%;
+        padding: auto;
+        margin: auto;
+    }
+    /*HOMEPAGE*/
+    .temporada, .restaurante, .iconicos {
+        min-height: 31.25rem;
+    }
+    .temporada__container {
+        width: 90%;
+        min-height: 31.25rem;
+    }
+    .arrownext {
+        right: 5.9375rem;
+    }
+    .arrowprev {
+        left: 5.9375rem;
+    }
+    .iconicos__grid {
+        width: 90%;
+    }
+    .lightbox__img {
+        width: 55vw;
+        height: 60vh;
+    }
+    .lightbox__btn {
+        margin-left: 37.5rem;
+    }
+    /*UBICACIÓN*/
+    .mapa__container {
+        width: 90%;
+    }
+    .lugares__pais {
+        text-align: center;
+    } 
+    .lugares__ubicacion {
+        font-size: 2.8em;
+    }
+    /*AYUDANTE*/
+    .tips__texto {
+        top: calc(55%);
+    }
+    /*MENÚ*/
+    .opcion__menu {
+        font-size: 1.3em;
+    }
+    .img {
+        width: 85%;
+    }
+    /*FOOTER*/
+    .redes__follow, .redes__link {
+        margin-right: 2.5rem;
+    }
+    .footer__logo {
+        width: 80%;
+    }
+}
+@media (max-width: 992px) {
+    /*HEADER*/
+    .header__picture {
+        width: 60%;
+    }
+    .header__logo {
+        margin: .3125rem 0 .3125rem 1.875rem;
+    }
+    /*HOMEPAGE*/
+    .temporada, .restaurante, .iconicos {
+        min-height: 25rem;
+    }
+    .partes__titulo {
+        width: 90%;
+        font-size: 2em;
+    }
+    .temporada__container {
+        width: 85%;
+        min-height: 20.625rem;
+    }
+    .arrownext {
+        right: 5.625rem;
+    }
+    .arrowprev {
+        left: 5.625rem;
+    }
+    .iconicos__grid {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .lightbox__img {
+        width: 55vw;
+        height: 30vh;
+    }
+    .lightbox__btn {
+        margin-left: 25rem;
+    }
+    /*UBICACIÓN*/
+    .mapa__container {
+        width: 100%;
+    }
+    .lugares__ciudad {
+        font-size: 1.3em;
+    }
+    .lugares__ubicacion {
+        font-size: 1.9em;
+    }
+    .arrowsnext {
+        right: 1.5625rem;
+    } 
+    .arrowsprev {
+        left: 1.5625rem;
+    }
+    /*SOMOS*/
+    .somos {
+        display: flex;
+        flex-direction: column;
+    }
+    .somos img {
+        width: 85%;
+        margin: auto;
+    }
+    /*AYUDANTE*/
+    .tips {
+        grid-template-columns: 1fr;
+    }
+    .tips__texto {
+        font-size: 1.5em;
+        top: calc(60%);
+    }
+    .tips__titulo {
+        font-size: 2em;
+    }
+    /*MENÚ*/
+    .opcion__menu {
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+    .acordeon {
+        width: 90%;
+    }
+    .img {
+        width: 100%;
+    }
+    /*FOOTER*/
+    .footer__partea {
+        flex-flow: column nowrap;
+    }
+    .footer__redes {
+        width: 90%;
+    }
+    .redes__menu {
+        justify-content: flex-start;
+    }
+    .redes__follow, .redes__link {
+        font-size: 0.8em;
+        margin-right: 2rem;
+    }
+    .footer__picture {
+        width: 60%;
+    }
+    .footer__logo {
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    /*HEADER*/
+    .header__menu, .header__bgcover {
+        right: calc(10% - 3.4375rem);
+    }
+    .header__logo {
+        display: none;
+    }
+    .header__title {
+        text-align: left;
+    }
+    /*HOMEPAGE*/
+    .temporada, .restaurante {
+        min-height: 18.75rem;
+    }
+    .partes__titulo {
+        width: 95%;
+        font-size: 1.8em;
+    }
+    .temporada__container {
+        width: 90%;
+        min-height: 18.125rem;
+    }
+    .arrownext {
+        right: 3.75rem;
+    }
+    .arrowprev {
+        left: 3.75rem;
+    }
+    .lightbox__img {
+        width: 58vw;
+        height: 45vh;
+    }
+    .lightbox__btn {
+        margin-left: 21.875rem;
+    }
+    /*UBICACIÓN*/
+    .mapa {
+        width: 100%;
+    }
+    .arrowsnext {
+        right: 1.875rem;
+    } 
+    .arrowsprev {
+        left: 1.875rem;
+    }
+    .lugares__container {
+        min-height: 9.375rem;
+    }
+    .lugares__ciudad {
+        font-size: 1em;
+    }
+    .lugares__ubicacion {
+        font-size: 1.5em;
+    } 
+    /*AYUDANTE*/
+    .tips__texto {
+        font-size: 1em;
+    }
+    .tips__titulo {
+        font-size: 1.5em;
+    }
+    /*MENÚ*/
+    .opcion {
+        flex-wrap: wrap;
+    }
+    .opcion__menu {
+        font-size: 1.5em;
+        font-weight: 500; 
+    }
+    .acordeon {
+        width: 100%;
+    }
+    .titulom {
+        font-size: 1.2em;
+    }
+    /*FOOTER*/
+    .redes__follow {
+        font-size: 0.7em;
+    }
+    .redes__nav {
+        flex-wrap: wrap;
+    }
+    .footer__parteb {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 600px) {
+    /*HEADER*/
+    .header__menu, .header__bgcover {
+        right: calc(15% - 3.4375rem);
+    }
+    .header__p {
+        font-size: 0.8em;
+        padding: 0;
+        margin: 0;
+    }
+    .header__title {
+        font-size: 3.6em;
+    }
+    .header__navlink {
+        font-size: 1.1em;
+    }
+    /*HOMPAGE*/
+    .partes__titulo {
+        width: 90%;
+        font-size: 1.5em;
+    }
+    .temporada__container {
+        width: 100%;
+        min-height: 12.5rem;
+    }
+    .arrownext {
+        right: .625rem;
+    }
+    .arrowprev {
+        left: .625rem;
+    }
+    .lightbox__img {
+        width: 90vw;
+        height: 30vh;
+    }
+    .lightbox__btn {
+        padding: .0625rem 2rem;
+        margin-left: 18.75rem;
+    }
+    /*UBICACIÓN*/
+    .mapa__titulo {
+        text-align: left;
+    }
+    .lugares__ciudad {
+        font-size: 0.8em;
+    }
+    .lugares__ubicacion {
+        font-size: 1em;
+    }
+    .arrowsnext {
+        right: .9375rem;
+    } 
+    .arrowsprev {
+        left: .9375rem;
+    }
+    /*SOMOS*/
+    .somos picture {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .somos p {
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*AYUDANTE*/
+    .tips__texto {
+        font-size: 0.9em;
+        top: calc(16%);
+    }
+    .tips__titulo {
+        font-size: 2em;
+    }
+    /*MENÚ*/
+    .opcion__menu {
+        font-size: 1.1em; 
+    }
+    .entrada__titulo, .fuertes__titulo, .alcoholicas__titulo, .bebidas__titulo, .postres__titulo {
+        padding: .625rem 1.25rem;
+    }
+    .picture {
+        width: 90%;
+    }
+    /*CONTACTO*/
+    .trabaja {
+        min-height: 37.5rem;
+    }
+    .opciones {
+        font-size: 1.3em;
+    }
+    .container {
+        width: 90%;
+    }
+    .escuchamos__titulo, .trabaja__titulo {
+        width: 100%;
+    }
+    /*FOOTER*/
+    .footer__logo {
+        width: 90%;
+    }
+    .footer__redes {
+        width: 70%;
+    }
+    .footer__parteb {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .footer__copy {
+        grid-row: 3/4;
+    }
+}

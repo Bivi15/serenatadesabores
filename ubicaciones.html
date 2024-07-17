@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Serenata de Sabores - Descubra nuestras sedes.</title>
+    <meta name="title" content="Serenata de Sabores - Descubra nuestras sedes." />
+    <meta name="description" content="Conozca la presencia global de Serenata de Sabores. Experimenta el viaje culinario en varios rincones del planeta." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bivi15.github.io/serenatadesabores/ubicaciones.html" />
+    <meta property="og:title" content="Serenata de Sabores - Descubra nuestras sedes." />
+    <meta property="og:description" content="Conozca la presencia global de Serenata de Sabores. Experimenta el viaje culinario en varios rincones del planeta." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bivi15.github.io/serenatadesabores/ubicaciones.html" />
+    <meta property="twitter:title" content="Serenata de Sabores - Descubra nuestras sedes." />
+    <meta property="twitter:description" content="Conozca la presencia global de Serenata de Sabores. Experimenta el viaje culinario en varios rincones del planeta." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/ubicaciones.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--El header tiene la misma distribución del Homepage-->
+    <header class="header">
+        <p class="header__p"><a href="platos.html" title="Menú">Sumérgete en nuestro delicioso menú!</a></p>
+        <!--El nombre del restaurante va a redirigir siempre al Homepage-->
+        <h1 class="header__title"><a href="index.html" title="Homepage">Serenata de Sabores</a></h1>
+        <div class="header__wrapper">
+            <picture class="header__picture">
+                <img src="assets/logo/logo.webp" alt="Logo" class="header__logo" title="Logo">
+            </picture>
+            <!--El menú tipo hamburguesa se va a desplegar cubriendo toda la página y va a contar con 5 links-->
+            <nav class="header__nav">
+                <div class="header__menu">
+                    <div class="header__line linea"></div>
+                    <div class="header__line lineb"></div>
+                    <div class="header__line linec"></div>
+                </div>
+                <div class="header__bgcover"></div>
+                <ul class="header__navlist">
+                    <li class="header__navitem">
+                        <a href="ubicaciones.html" class="header__navlink" title="Ubicación">Ubicación</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="somos.html" class="header__navlink" title="Somos">Quiénes somos</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="ayudante.html" class="header__navlink" title="Ayudante">Ayudante de cocina</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="platos.html" class="header__navlink" title="Menú">Menú</a>
+                    </li>
+                    <li class="header__navitem">
+                        <a href="contacto.html" class="header__navlink" title="Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--El main se va a dividir en dos secciones.-->
+    <main class="main">
+        <!--La sección uno muestra un mapa-->
+        <section class="mapa">
+            <h2 class="mapa__titulo">¡Encuentra tu Serenata de Sabores más cercana!</h2>
+            <div class="mapa__container">
+                <img src="assets/mapa.webp" alt="Mapa" title="Mapa" class="mapa__frame">
+            </div>
+        </section>
+        <!--La sección dos muentra los lugares destacados donde se encuentran los restaurantes-->
+        <section class="lugares">
+            <h2 class="lugares__titulo">Lugares destacados.</h2>
+            <div class="lugares__slider">
+                <!--Container de los lugares-->
+                <div class="lugares__container">
+                    <div class="lugares__pais isVisible">
+                        <h3 class="lugares__ciudad">Santiago de Chile / Chile</h3>
+                        <p class="lugares__ubicacion">Alto las Condes</p>
+                    </div>
+                    <div class="lugares__pais">
+                        <h3 class="lugares__ciudad">Bogotá / Colombia</h3>
+                        <p class="lugares__ubicacion">Zona G - calle 66</p>
+                    </div>
+                    <div class="lugares__pais">
+                        <h3 class="lugares__ciudad">Quito / Ecuador</h3>
+                        <p class="lugares__ubicacion">Mall El Jardín</p>
+                    </div>
+                    <div class="lugares__pais">
+                        <h3 class="lugares__ciudad">Madrid / España</h3>
+                        <p class="lugares__ubicacion">Fuencarral</p>
+                    </div>
+                    <div class="lugares__pais">
+                        <h3 class="lugares__ciudad">Ciudad de México / México</h3>
+                        <p class="lugares__ubicacion">Paseo Acoxpa</p>
+                    </div>
+                    <div class="lugares__pais">
+                        <h3 class="lugares__ciudad">Panamá / Panamá</h3>
+                        <p class="lugares__ubicacion">Marbella</p>
+                    </div>
+                </div>
+                <!--Botones de siguiente y anterior-->
+                <button class="lugares__arrow arrowsnext" title="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                  </svg>
+                </button>
+                <button class="lugares__arrow arrowsprev" title="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                  </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+    <!--El footer va a tener la misma distribuación que en el homepage-->
+    <footer class="footer">
+        <!--En la primera parte está el logo y las redes sociales-->
+        <div class="footer__partea">
+            <picture class="footer__picture">
+                <img src="assets/logo/logotipo.webp" alt="Logo" class="footer__logo" title="Logo" loading="lazy">
+            </picture>
+            <!--Las redes sociales van a ser puestas como un menú de navegación-->
+            <div class="footer__redes redes">
+                <div class="redes__wrapper">
+                    <div class="redes__menu">
+                        <div class="redes__follow">Follow us</div>
+                        <div class="redes__line"></div>
+                        <div class="redes__nav"> 
+                            <a href="https://www.facebook.com/" class="redes__link" title="Facebook" target="_blank" rel="noreferrer">Facebook</a>
+                            <a href="https://www.instagram.com/" class="redes__link" title="Instagram" target="_blank" rel="noreferrer">Instagram</a>
+                            <a href="https://x.com/i/flow/login" class="redes__link" title="Twitter" target="_blank" rel="noreferrer">Twitter</a>
+                            <a href="https://www.youtube.com/" class="redes__link" title="Youtube" target="_blank" rel="noreferrer">Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--En la segunda parte está el slogan del restaurante-->
+        <h3 class="footer__slogan">Les ofrecemos un viaje culinario</h3>
+        <!--En la tercera parte estarán las partes para trabajar en el restaurante, dejar reseñas y el copyright-->
+        <div class="footer__parteb">
+            <p class="footer__opinion"><a href="contacto.html" title="Escuchamos">Te escuchamos</a></p>
+            <p class="footer__copy">© 2010 Serenata de sabores</p>
+            <p class="footer__trabaja"><a href="contacto.html" title="Trabaja">Trabaja con nosotros</a></p>
+        </div>
+    </footer>
+</body>
+</html>
